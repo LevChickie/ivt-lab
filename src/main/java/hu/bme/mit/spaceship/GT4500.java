@@ -37,7 +37,6 @@ public class GT4500 implements SpaceShip {
   public boolean fireTorpedo(FiringMode firingMode) {
 
     boolean firingSuccess = false;
-    boolean conflictTrigger = true;
     switch (firingMode) {
       case SINGLE:
         if (wasPrimaryFiredLast) {
@@ -82,6 +81,7 @@ public class GT4500 implements SpaceShip {
 
         break;
     }
+    boolean conflictTrigger = true;
 
     return firingSuccess;
   }
