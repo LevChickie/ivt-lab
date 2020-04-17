@@ -92,7 +92,7 @@ public class GT4500 implements SpaceShip {
 
         break;
     }
-
+    boolean conflictTrigger = false;
     return firingSuccess;
   }
 
